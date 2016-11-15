@@ -1,0 +1,7 @@
+mixin logo(href, name)
+    .columnLeft--logo
+        a(class!=attributes.class href=href)= name
+        if block
+            block
+        else
+            p No content provided

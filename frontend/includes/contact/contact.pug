@@ -1,0 +1,12 @@
+mixin contact(title, ...items)
+    - var number = 0
+    .item.item-contact
+        h1.contact= title
+        .item-table
+            - for (var i=0; i<items.length/2; i++) {
+                .item-row
+                - for (var y=0; y<2; y++) {
+                    span.item-cell= items[number]
+                    - number++
+                - }
+            - }

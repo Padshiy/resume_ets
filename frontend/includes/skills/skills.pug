@@ -1,0 +1,18 @@
+mixin skills(title, creative, teamwork, innovate, communication, ...items)
+    - var arraySkills = ['creative', 'teamwork', 'innovate', 'communication']
+    - var numberSkills = [creative, teamwork, innovate, communication]
+    .item
+        h1.skills= title
+        div
+            - for (var i=0; i<arraySkills.length; i++) {
+                span.skills-span= items[i]
+                div(class= arraySkills[i])
+
+                    - for (var z=0; z<12; z++) {
+                        if (numberSkills[i] == z+1)
+                            .active
+                        else
+                            div
+                    - }
+
+            - }
