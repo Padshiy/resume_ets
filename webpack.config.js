@@ -28,14 +28,20 @@ module.exports = {
             test:   /\.styl$/,
             loader: ExtractTextPlugin.extract('css!stylus?resolve url')
         }, {
+            test:   /\.css$/,
+            loader: ExtractTextPlugin.extract('css!stylus?resolve url')
+        },{
             test:   /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
-            loader: 'file?name=[path][name].[ext]?[hash]'
+            loader: 'file?name=[path][name].[ext]'
         }]
 
     },
 
     plugins: [
-        new ExtractTextPlugin('css/[name].css', {allChunks: true}),
-        new HtmlWebpackPlugin({filename: 'index.html', template: './index.pug'})
+        new ExtractTextPlugin('css/[name].[hash].css', {allChunks: true}),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './index.pug'
+        })
     ]
 };
