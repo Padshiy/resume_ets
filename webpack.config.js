@@ -1,6 +1,8 @@
 const webpack = require('webpack');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const StylExtractTextPlugin = require("extract-text-webpack-plugin");
+const CSSExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
     context: __dirname + '/frontend',
@@ -26,11 +28,11 @@ module.exports = {
             loader: "pug"
         }, {
             test:   /\.styl$/,
-            loader: ExtractTextPlugin.extract('css!stylus?resolve url')
+            loader: StylExtractTextPlugin.extract('css!stylus?resolve url')
         }, {
-            test:   /\.css$/,
-            loader: ExtractTextPlugin.extract('css!stylus?resolve url')
-        },{
+            test:   /\.css/,
+            loader: 'style!css!autoprefixer?browsers=last 2 versions'
+        }, {
             test:   /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
             loader: 'file?name=[path][name].[ext]'
         }]
@@ -38,7 +40,9 @@ module.exports = {
     },
 
     plugins: [
-        new ExtractTextPlugin('css/[name].[hash].css', {allChunks: true}),
+        new StylExtractTextPlugin('css/[name].[hash].css', {allChunks: true}),
+        new CSSExtractTextPlugin('css/[name].[hash].css', {allChunks: true}),
+        new webpack.NoErrorsPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './index.pug'

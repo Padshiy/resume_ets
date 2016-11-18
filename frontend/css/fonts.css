@@ -1,31 +1,37 @@
 @font-face {
     font-family: 'Myriad Pro';
-    src: url('../fonts/MyriadProLightSemiExtended.eot');
-    src: local('☺'), url('../fonts/MyriadProLightSemiExtended.woff') format('woff'), url('../fonts/MyriadProLightSemiExtended.ttf') format('truetype'), url('../fonts/MyriadProLightSemiExtended.svg') format('svg');
+    src: url(../fonts/MyriadProLightSemiExtended.eot);
+    src: url(../fonts/MyriadProLightSemiExtended.woff) format('woff'),
+        url(../fonts/MyriadProLightSemiExtended.ttf) format('truetype'),
+        url(../fonts/MyriadProLightSemiExtended.svg) format('svg');
     font-weight: normal;
     font-style: normal;
 } 
 
 @font-face {
 	font-family: 'Myriad Pro';
-	src: url('../fonts/MyriadProRegular/MyriadProRegular.eot');
-	src: local('☺'), url('../fonts/MyriadProRegular/MyriadProRegular.woff') format('woff'), url('../fonts/MyriadProRegular/MyriadProRegular.ttf') format('truetype'), url('../fonts/MyriadProRegular/MyriadProRegular.svg') format('svg');
+	src: url(../fonts/MyriadProRegular/MyriadProRegular.eot);
+	src: url(../fonts/MyriadProRegular/MyriadProRegular.woff) format('woff'),
+        url(../fonts/MyriadProRegular/MyriadProRegular.ttf) format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Myriad Pro';
-	src: url('../fonts/MyriadProBold/MyriadProBold.eot');
-	src: local('☺'), url('../fonts/MyriadProBold/MyriadProBold.woff') format('woff'), url('../fonts/MyriadProBold/MyriadProBold.ttf') format('truetype'), url('../fonts/MyriadProBold/MyriadProBold.svg') format('svg');
+	src: url(../fonts/MyriadProBold/MyriadProBold.eot);
+	src: url(../fonts/MyriadProBold/MyriadProBold.woff) format('woff'),
+        url(../fonts/MyriadProBold/MyriadProBold.ttf) format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
     font-family: 'Myriad Pro';
-    src: url('../fonts/MyriadProLightSemiExtended.eot');
-    src: local('☺'), url('../fonts/MyriadProLightSemiExtended.woff') format('woff'), url('../fonts/MyriadProLightSemiExtended.ttf') format('truetype'), url('../fonts/MyriadProLightSemiExtended.svg') format('svg');
+    src: url(../fonts/MyriadProLightSemiExtended.eot);
+    src: url(../fonts/MyriadProLightSemiExtended.woff) format('woff'),
+        url(../fonts/MyriadProLightSemiExtended.ttf) format('truetype'),
+        url(../fonts/MyriadProLightSemiExtended.svg) format('svg');
     font-weight: lighter;
     font-style: normal;
 } 
