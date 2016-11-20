@@ -1,55 +1,57 @@
 include ../eduction/eduction.pug
 include ../experience/experience.pug
+include ../software/software.pug
 
 section.columnRight
     +eduction('Учеба')
-        span.right-item-span-1
-            strong MASTER DEGREE
+        span.eduction__container_span-header
+            strong.eduction__container_span-strong MASTER DEGREE
             |                             ⁄⁄ Feb 2011-Jun 2014
-        span.right-item-span-2
+        span.eduction__container_span-main
             | UNIVERSITY NAME
-        span.right-item-span-3.eduction-container_block3
+        span.eduction__container_span-footer-block-first
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-        span.right-item-span-1
+        span.eduction__container_span-header
             strong MASTER DEGREE
             |                             ⁄⁄ Feb 2011-Jun 2014
-        span.right-item-span-2
+        span.eduction__container_span-main
             | UNIVERSITY NAME
-        span.right-item-span-3.eduction-container_block6
+        span.eduction__container_span-footer-block-second
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-        span.right-item-span-1
+        span.eduction__container_span-header
             strong MASTER DEGREE
             |                             ⁄⁄ Feb 2011-Jun 2014
-        span.right-item-span-2
+        span.eduction__container_span-main
             | UNIVERSITY NAME
-        span.right-item-span-3.eduction-container_block9
+        span.eduction__container_span-footer-block-three
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-        span.right-item-span-1
+        span.eduction__container_span-header
             strong MASTER DEGREE
             |                             ⁄⁄ Feb 2011-Jun 2014
-        span.right-item-span-2
+        span.eduction__container_span-main
             | UNIVERSITY NAME
-        span.right-item-span-3
+        span.eduction__container_span-footer-block-fourth
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
     +experience('Опыт работы')
-        span.right-item-span-1.experience-span
+        span.experience__container_span-header
             strong COMPANY NAME
             |                             ⁄⁄ Feb 2011-Jun 2014
-        span.right-item-span-2
+        span.experience__container_span-main
             | YOUR JOB HERE
-        span.right-item-span-3.experience-container_block3
+        span.eduction__container_span-footer-block-first
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-        span.right-item-span-1.experience-span
+        span.experience__container_span-header
             strong COMPANY NAME
             |                             ⁄⁄ Feb 2011-Jun 2014
-        span.right-item-span-2
+        span.experience__container_span-main
             | YOUR JOB HERE
-        span.right-item-span-3.experience-container_block6
+        span.eduction__container_span-footer-block-second
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-        span.right-item-span-1.experience-span
+        span.experience__container_span-header
             strong COMPANY NAME
             |                             ⁄⁄ Feb 2011-Jun 2014
-        span.right-item-span-2
+        span.experience__container_span-main
             | YOUR JOB HERE
-        span.right-item-span-3
+        span.eduction__container_span-footer-block-three
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+    +software(title, ['photoshop', 'dreamweaver', 'illustrator', 'After effects', 'indesign', 'htmls&css3'], [91, 83, 71, 62, 56, 91])

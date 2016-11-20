@@ -1,0 +1,11 @@
+mixin software(title, textArray, numberArray)
+    - var classes = ['photoshop', 'dreamweaver', 'illustrator', 'effects', 'indesign', 'html']
+    .software
+        .software__header= title
+        .software__containerSoft
+            - for(var i=0; i<textArray.length; i++) {
+                .containerSoft__block
+                    - var classDiv= 'containerSoft__block_' + classes[i]
+                    span.containerSoft__block_text= textArray[i]
+                    div(class=classDiv)
+            - }
