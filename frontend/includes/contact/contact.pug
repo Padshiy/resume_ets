@@ -1,6 +1,7 @@
 mixin contact(title, ...items)
     - var number = 0
     .contact
+        .contact__line
         h1.contact__header= title
         .contact__table
             - for (var i=0; i<items.length/2; i++) {

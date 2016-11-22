@@ -2,6 +2,7 @@ mixin skills(title, creative, teamwork, innovate, communication, ...items)
     - var arraySkills = ['skills-block__creative', 'skills-block__teamwork', 'skills-block__innovate', 'skills-block__communication']
     - var numberSkills = [creative, teamwork, innovate, communication]
     .skills
+        .skills__line
         h1.skills__header= title
         div.skills__skills-block
             - for (var i=0; i<arraySkills.length; i++) {

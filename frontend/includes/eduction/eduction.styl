@@ -1,20 +1,29 @@
 .eduction
-  border-top #3d6cb0 solid 5px
   position relative
   margin-right 0
   margin-left 23px
-  margin-bottom 70px
+  margin-bottom 105px
 
 .eduction__header
-  display inline-block
+  display block
   color #3d6cb0
   background-color #fff
-  top -44px
   text-transform uppercase
   font-size 3.4em
   font-weight 900
-  position relative
-  padding-left 92px
+  position absolute
+  padding-left 82px
+  top 10px
+  word-wrap break-word
+  max-width 100%
+  height 73px
+  text-overflow ellipsis
+  box-sizing border-box
+  white-space nowrap
+  overflow hidden
+  vertical-align middle
+  line-height 1.5
+  margin 0
 
 .eduction__header::before
   content ""
@@ -24,13 +33,20 @@
   background url(../images/sprite.png) 0 0 no-repeat
   background-size cover
   position absolute
-  left -1px
-  top -15px
+  left 0
+  top 0
   background-position -82px 0
+
+.eduction__line
+  height 5px
+  width 100%
+  background #3d6cb0
+  top 40px
+  position relative
 
 .eduction__container
   position relative
-  top -16px
+  top 90px
 
 .eduction__container_span-header
   font-size 2em

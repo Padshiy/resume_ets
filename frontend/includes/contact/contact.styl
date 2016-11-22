@@ -1,5 +1,4 @@
 .contact
-  border-top #3d6cb0 solid 5px
   position relative
   margin-right 25px
   margin-left 21px
@@ -7,15 +6,25 @@
 
 
 .contact__header
-  display inline-block
+  display block
   color #3d6cb0
   background-color #fff
-  top -62px
   text-transform uppercase
   font-size 3.4em
   font-weight 900
-  position relative
+  position absolute
   padding-left 82px
+  top 10px
+  word-wrap break-word
+  max-width 100%
+  height 73px
+  text-overflow ellipsis
+  box-sizing border-box
+  white-space nowrap
+  overflow hidden
+  vertical-align middle
+  line-height 1.5
+  margin 0
 
 
 .contact__header::before
@@ -26,16 +35,24 @@
   background url(../images/sprite.png) 0 0 no-repeat
   background-size cover
   position absolute
-  left -2px
-  top -11px
+  left 0
+  top 0
   background-position -308px 0
+
+
+.contact__line
+  height 5px
+  width 100%
+  background #3d6cb0
+  top 40px
+  position relative
 
 
 .contact__table
   display: table;
   font-size: 1.5em;
   position: relative;
-  top: -5px;
+  top: 90px;
   line-height: 1;
 
 
