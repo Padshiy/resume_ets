@@ -1,3 +1,5 @@
+@import "normalize.css"
+
 body
   font-family 'Myriad Pro', 'sens-serif'
   font-style normal
@@ -10,6 +12,13 @@ body
   padding-left 15px
   margin-right auto
   margin-left auto
+  @media screen and (max-width: 1000px)
+    width 100%
+  @media screen and (max-width: 800px)
+    font-size 9px
+
+strong
+  font-weight bold
 
 @import '../includes/*'
 @import "fonts.css"

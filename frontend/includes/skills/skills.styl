@@ -1,7 +1,7 @@
 .skills
   position relative
   margin-right 25px
-  margin-left 7px
+  margin-left 20px
   margin-bottom 78px
 
 .skills__header
@@ -13,10 +13,10 @@
   font-weight 900
   position absolute
   padding-left 82px
-  top 10px
+  top 5px
   word-wrap break-word
   max-width 100%
-  height 73px
+  height 80px
   text-overflow ellipsis
   box-sizing border-box
   white-space nowrap
@@ -24,18 +24,20 @@
   vertical-align middle
   line-height 1.5
   margin 0
+  left -2px
+  padding-top 6px
 
 .skills__header::before
   content ""
-  width 76px
-  height 76px
+  width 78px
+  height 78px
   display inline-block
   background url(../images/sprite.png) 0 0 no-repeat
   background-size: cover;
   position: absolute
-  left 0
+  left -1px
   top 0
-  background-position -233px 0
+  background-position -239px 0
 
 .skills__line
   height 5px
@@ -46,23 +48,26 @@
 
 .skills__skills-block
   position relative
-  top 90px
+  top 97px
   padding 0 45px
+  @media screen and (max-width: 800px)
+    padding 0
 
 .skills-block__span
   text-align center
   display block
   text-transform uppercase
-  font-size 2em
+  font-size 2.2em
   font-weight 400
-  margin-bottom 5px
+  margin-bottom 8px
 
 .skills-block__creative
   display flex
   justify-content space-between
   margin-bottom 19px
 
-.skills-block__creative_circle
+.skills-block__creative_circle,
+.skills-block__creative_circle-active
   height 18px
   width 18px
   display inline-block
@@ -71,7 +76,8 @@
   margin-right 5px
 
 
-.skills-block__creative_circle::before
+.skills-block__creative_circle::before,
+.skills-block__creative_circle-active::before
   content ""
   height 18px
   width 18px
@@ -87,7 +93,8 @@
   justify-content space-between
   margin-bottom 19px
 
-.skills-block__teamwork_circle
+.skills-block__teamwork_circle,
+.skills-block__teamwork_circle-active
   height 18px
   width 18px
   display inline-block
@@ -96,7 +103,8 @@
   margin-right 5px
 
 
-.skills-block__teamwork_circle::before
+.skills-block__teamwork_circle::before,
+.skills-block__teamwork_circle-active::before
   content ""
   height 18px
   width 18px
@@ -112,7 +120,8 @@
   justify-content space-between
   margin-bottom 18px
 
-.skills-block__innovate_circle
+.skills-block__innovate_circle,
+.skills-block__innovate_circle-active
   height 18px
   width 18px
   display inline-block
@@ -121,7 +130,8 @@
   margin-right 5px
 
 
-.skills-block__innovate_circle::before
+.skills-block__innovate_circle::before,
+.skills-block__innovate_circle-active::before
   content ""
   height 18px
   width 18px
@@ -137,7 +147,8 @@
   justify-content space-between
   margin-bottom 19px
 
-.skills-block__communication_circle
+.skills-block__communication_circle,
+.skills-block__communication_circle-active
   height 18px
   width 18px
   display inline-block
@@ -146,7 +157,8 @@
   margin-right 5px
 
 
-.skills-block__communication_circle::before
+.skills-block__communication_circle::before,
+.skills-block__communication_circle-active::before
   content ""
   height 18px
   width 18px

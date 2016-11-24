@@ -5,11 +5,18 @@ mixin software(title, textArray, numberArray)
         h1.software__header= title
         .software__containerSoft
             - for(var i=0; i<textArray.length; i++) {
-                .containerSoft__block
-                    - var classDiv= 'containerSoft__block_' + classes[i]
-                    - var classDivBlue= 'containerSoft__block_' + classes[i] + '_blue'
-                    - var styleWidth= numberArray[i] + '%'
-                    span.containerSoft__block_text= textArray[i]
-                    div(class=classDiv)
-                        div(class=classDivBlue)(style="width:" + styleWidth)
+                - var classDiv= 'containerSoft__block_' + classes[i]
+                - var classDivRigth = classDiv + '_rigth'
+                - var classDivBlue= 'containerSoft__block_' + classes[i] + '_blue'
+                - var styleWidth= numberArray[i] + '%'
+                if (i%2 == 0)
+                    .containerSoft__block
+                        span.containerSoft__block_text= textArray[i]
+                        div(class=classDiv)
+                            div(class=classDivBlue)(style="width:" + styleWidth)
+                else
+                    .containerSoft__block_rigth
+                        span.containerSoft__block_text= textArray[i]
+                        div(class=classDiv)
+                            div(class=classDivBlue)(style="width:" + styleWidth)
             - }

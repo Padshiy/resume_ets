@@ -2,7 +2,9 @@
   position relative
   margin-right 0
   margin-left 23px
-  margin-bottom 86px
+  margin-bottom 157px
+  @media screen and (max-width: 400px)
+    margin-left 21px
 
 .experience__header
   display block
@@ -12,11 +14,11 @@
   font-size 3.4em
   font-weight 900
   position absolute
-  padding-left 82px
-  top 10px
+  padding-left 96px
+  top 3px
   word-wrap break-word
   max-width 100%
-  height 73px
+  height 80px
   text-overflow ellipsis
   box-sizing border-box
   white-space nowrap
@@ -24,6 +26,8 @@
   vertical-align middle
   line-height 1.5
   margin 0
+  padding-top 6px
+  left -4px
 
 .experience__header::before
   content ""
@@ -32,10 +36,10 @@
   background-size cover
   position absolute
   left 0
-  width 76px
-  height 76px
-  top 0
-  background-position: -5px 0
+  width 80px
+  height 80px
+  top -2px
+  background-position: -3px 0
 
 .experience__line
   height 5px
@@ -45,15 +49,24 @@
   position relative
 
 .experience__block
-  top 60px
+  top 112px
   position relative
 
 .experience__container_span-header
-  font-size 2em
+  font-size 2.2em
   display inline-block
   margin-left 39px
   position relative
-  top 90px
+  margin-bottom 6px
+  @media screen and (max-width: 400px)
+    margin-left 21px
+
+.experience__container_span-header-strong
+  color #3d6cb0
+  font-weight 900
+  margin-left 10px
+  letter-spacing 1.2px
+  margin-right 19px
 
 .experience__container_span-header::before
   content ""
@@ -73,28 +86,35 @@
   font-weight bold
   letter-spacing -1.2px
   line-height 1.04
+  @media screen and (max-width: 400px)
+    margin-left 30px
 
-.eduction__container_span-footer-block-first
-  font-size 1.2em
-  display block
-  margin-left 52px
-  margin-bottom 8px
-  margin-top 8px
-  line-height 1.3
-
-.eduction__container_span-footer-block-second
-  font-size 1.2em
-  display block
-  margin-left 52px
-  margin-bottom 13px
-  margin-top 8px
-  line-height 1.3
-
-.eduction__container_span-footer-block-three
+.experience__container_span-footer-block-first
   font-size 1.2em
   display block
   margin-left 52px
   margin-bottom 6px
   margin-top 8px
   line-height 1.3
+  @media screen and (max-width: 400px)
+    margin-left 30px
 
+.experience__container_span-footer-block-second
+  font-size 1.2em
+  display block
+  margin-left 52px
+  margin-bottom 8px
+  margin-top 8px
+  line-height 1.3
+  @media screen and (max-width: 400px)
+    margin-left 30px
+
+.experience__container_span-footer-block-three
+  font-size 1.2em
+  display block
+  margin-left 52px
+  margin-bottom 6px
+  margin-top 8px
+  line-height 1.3
+  @media screen and (max-width: 400px)
+    margin-left 30px
