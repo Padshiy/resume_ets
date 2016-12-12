@@ -1,7 +1,7 @@
-mixin logo(href, name)
+mixin logo(href, name, ...logoText)
+    -var logoClass = ['logo__name', 'logo__surname', 'logo__profession']
     .logo
-        a(class!=attributes.class href=href)= name
-        if block
-            block
-        else
-            p No content provided
+        a(class="logo__circle" href=href)= name
+        -for (var i=0; i<logoText.length; i++) {
+            p(class= logoClass[i])= logoText[i]
+        -}

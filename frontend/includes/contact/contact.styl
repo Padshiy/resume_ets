@@ -4,58 +4,54 @@
   margin-left 21px
   margin-bottom 112px
 
+  &__header
+    display block
+    color #3d6cb0
+    background-color #fff
+    text-transform uppercase
+    font-size 3.4em
+    font-weight 900
+    position absolute
+    padding-left 86px
+    top 4px
+    word-wrap break-word
+    max-width 100%
+    height 80px
+    text-overflow ellipsis
+    box-sizing border-box
+    white-space nowrap
+    overflow hidden
+    vertical-align middle
+    line-height 1.5
+    margin 0
+    left -3px
+    padding-top 7px
 
-.contact__header
-  display block
-  color #3d6cb0
-  background-color #fff
-  text-transform uppercase
-  font-size 3.4em
-  font-weight 900
-  position absolute
-  padding-left 86px
-  top 4px
-  word-wrap break-word
-  max-width 100%
-  height 80px
-  text-overflow ellipsis
-  box-sizing border-box
-  white-space nowrap
-  overflow hidden
-  vertical-align middle
-  line-height 1.5
-  margin 0
-  left -3px
-  padding-top 7px
+    &::before
+      content ""
+      width 78px
+      height 78px
+      display inline-block
+      background url(../images/sprite.png) 0 0 no-repeat
+      background-size cover
+      position absolute
+      left -1px
+      top 0
+      background-position -315px 0
 
+  &__line
+    height 5px
+    width 100%
+    background #3d6cb0
+    top 40px
+    position relative
 
-.contact__header::before
-  content ""
-  width 78px
-  height 78px
-  display inline-block
-  background url(../images/sprite.png) 0 0 no-repeat
-  background-size cover
-  position absolute
-  left -1px
-  top 0
-  background-position -315px 0
-
-
-.contact__line
-  height 5px
-  width 100%
-  background #3d6cb0
-  top 40px
-  position relative
-
-
-.contact__table
-  display table
-  font-size 1.6em
-  position relative
-  top 108px
-  line-height 1
+  &__table
+    display table
+    font-size 1.6em
+    position relative
+    top 108px
+    line-height 1
 
 
 .table__row

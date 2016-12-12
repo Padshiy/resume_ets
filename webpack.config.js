@@ -3,6 +3,7 @@ const StylExtractTextPlugin = require("extract-text-webpack-plugin");
 const CSSExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const NODE_ENV = process.env.NODE_ENV;
 
 module.exports = {
     context: __dirname + '/frontend',
@@ -16,7 +17,15 @@ module.exports = {
         publicPath: '/',
         filename:   '[name].js'
     },
+    
+    watch: NODE_ENV == 'development ',
 
+    watchOption: {
+        aggregateTimeout: 100
+    },
+
+    devtool: NODE_ENV == 'development ' ? "cheap-inline-module-source-map" : null,
+    
     module: {
 
         loaders: [{
