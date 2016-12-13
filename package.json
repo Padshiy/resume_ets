@@ -22,7 +22,7 @@
   "devDependencies": {},
   "scripts": {
     "development": "set NODE_ENV=development&&webpack",
-    "development-server": "set NODE_ENV=development&&webpack-dev-server"
+    "development-server": "set NODE_ENV=development&&webpack-dev-server --hot --inline"
   },
   "author": "Taras Eliseev",
   "license": "ISC"

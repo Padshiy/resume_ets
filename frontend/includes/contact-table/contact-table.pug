@@ -1,0 +1,13 @@
+mixin table(array)
+    - var number = 0
+    .table
+        - for (var i=0; i<array.length/2; i++) {
+        .table__row
+            - for (var y=0; y<2; y++) {
+            if(y % 2 == 0)
+                span.table__cell_blue= array[number]
+            else
+                span.table__cell= array[number]
+            - number++
+            - }
+        - }

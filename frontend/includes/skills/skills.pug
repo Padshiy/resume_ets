@@ -1,19 +1,5 @@
 mixin skills(title, creative, teamwork, innovate, communication, ...items)
-    - var arraySkills = ['skills-block__creative', 'skills-block__teamwork', 'skills-block__innovate', 'skills-block__communication']
-    - var numberSkills = [creative, teamwork, innovate, communication]
     .skills
         .skills__line
         h1.skills__header= title
-        div.skills__skills-block
-            - for (var i=0; i<arraySkills.length; i++) {
-                span.skills-block__span= items[i]
-                div(class= arraySkills[i])
-
-                    - for (var z=0; z<12; z++) {
-                        if (numberSkills[i] == z+1)
-                            div(class= arraySkills[i] + '_circle-active')
-                        else
-                            div(class= arraySkills[i] + '_circle')
-                    - }
-
-            - }
+        block

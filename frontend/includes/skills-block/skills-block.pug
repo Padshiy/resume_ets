@@ -1,0 +1,22 @@
+mixin skillsBlock(obj)
+
+    - var arraySkills = ['skillsBlock__creative', 'skillsBlock__teamwork', 'skillsBlock__innovate', 'skillsBlock__communication']
+    - var i = 0
+
+    .skillsBlock
+        - for (var key in obj) {
+
+            span.skillsBlock__header= key
+            div(class= arraySkills[i])
+
+                - for (var z=1; z<13; z++) {
+
+                    if (obj[key] == z)
+                        div(class= arraySkills[i] + '_circle-active')
+                    else
+                        div(class= arraySkills[i] + '_circle')
+
+                - }
+
+                - i++
+            -}

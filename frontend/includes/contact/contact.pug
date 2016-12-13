@@ -1,16 +1,5 @@
 mixin contact(title, ...items)
-    - var number = 0
     .contact
         .contact__line
         h1.contact__header= title
-        .contact__table
-            - for (var i=0; i<items.length/2; i++) {
-                .table__row
-                - for (var y=0; y<2; y++) {
-                    if(y%2 == 0)
-                        span.table__cell_blue= items[number]
-                    else
-                        span.table__cell= items[number]
-                    - number++
-                - }
-            - }
+        block

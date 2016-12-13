@@ -1,22 +1,5 @@
 mixin software(title, textArray, numberArray)
-    - var classes = ['photoshop', 'dreamweaver', 'illustrator', 'effects', 'indesign', 'html']
     .software
         .software__line
         h1.software__header= title
-        .software__containerSoft
-            - for(var i=0; i<textArray.length; i++) {
-                - var classDiv= 'containerSoft__block_' + classes[i]
-                - var classDivRigth = classDiv + '_rigth'
-                - var classDivBlue= 'containerSoft__block_' + classes[i] + '_blue'
-                - var styleWidth= numberArray[i] + '%'
-                if (i%2 == 0)
-                    .containerSoft__block
-                        span.containerSoft__block_text= textArray[i]
-                        div(class=classDiv)
-                            div(class=classDivBlue)(style="width:" + styleWidth)
-                else
-                    .containerSoft__block_rigth
-                        span.containerSoft__block_text= textArray[i]
-                        div(class=classDiv)
-                            div(class=classDivBlue)(style="width:" + styleWidth)
-            - }
+        block

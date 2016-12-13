@@ -1,0 +1,19 @@
+mixin containerSoft(textArray, numberArray)
+    - var classes = ['photoshop', 'dreamweaver', 'illustrator', 'effects', 'indesign', 'html']
+    .containerSoft
+        - for(var i=0; i<textArray.length; i++) {
+        - var classDiv= 'containerSoft_' + classes[i]
+        - var classDivRigth = classDiv + '_rigth'
+        - var classDivBlue= 'containerSoft_' + classes[i] + '_blue'
+        - var styleWidth= numberArray[i] + '%'
+        if (i % 2 == 0)
+            .containerSoft__block
+                span.containerSoft_text= textArray[i]
+                div(class=classDiv)
+                    div(class=classDivBlue)(style="width:" + styleWidth)
+        else
+            .containerSoft_rigth
+                span.containerSoft_text= textArray[i]
+                div(class=classDiv)
+                    div(class=classDivBlue)(style="width:" + styleWidth)
+        - }

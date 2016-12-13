@@ -1,8 +1,13 @@
-
 include includes/logo/logo.pug
 include includes/profile/profile.pug
 include includes/contact/contact.pug
+include includes/contact-table/contact-table.pug
 include includes/skills/skills.pug
+include includes/skills-block/skills-block.pug
+include includes/eduction/eduction.pug
+include includes/experience/experience.pug
+include includes/software/software.pug
+include includes/containerSoft/containerSoft.pug
 
 doctype html
 html
@@ -12,10 +17,84 @@ html
             include includes/columnLeft/columnLeft.pug
                 +logo('#', 'frontend developer', 'Тарас', 'Елисеев', 'frontend developer')
                 +profile('Обо мне')
-                    span.profile__text
-                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-                        strong
-                            | Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum
-                +contact('Контакты', 'Адрес', 'город Томск', 'e - mail', 'manticore1914@gmail.com', 'Телефон', '555-555-555', 'сайт', 'www.ets.tom.ru')
-                +skills('Умения', 9, 11, 6, 11, 'Креатив', 'Работа в команде', 'инновации', 'коммуникации')
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    | Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    | ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    | Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                    | arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+                    | pede mollis pretium. Integer tincidunt. <strong> Cras dapibus. Vivamus elementum semper nisi.
+                    | Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+                    | ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                    | nulla ut metus varius laoreet. Quisque rutrum </strong>
+                +contact('Контакты')
+                    +table(['Адрес', 'город Томск', 'e - mail', 'manticore1914@gmail.com', 'Телефон', '555-555-555', 'сайт', 'www.ets.tom.ru'])
+                +skills('Умения')
+                    +skillsBlock({'Креатив': 9, 'Работа в команде': 11, 'инновации': 6, 'коммуникации': 11})
             include includes/columnRight/columnRight.pug
+                +eduction('Учеба')
+                    span.eduction__container_span-header
+                        strong.eduction__container_span-strong MASTER DEGREE
+                        |                             ⁄⁄ Feb 2011-Jun 2014
+                    span.eduction__container_span-main
+                        | UNIVERSITY NAME
+                    span.eduction__container_span-footer-block-first
+                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        | Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        | ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                    span.eduction__container_span-header
+                        strong.eduction__container_span-strong MASTER DEGREE
+                        |                             ⁄⁄ Feb 2011-Jun 2014
+                    span.eduction__container_span-main
+                        | UNIVERSITY NAME
+                    span.eduction__container_span-footer-block-second
+                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        | Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        | ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                    span.eduction__container_span-header
+                        strong.eduction__container_span-strong MASTER DEGREE
+                        |                             ⁄⁄ Feb 2011-Jun 2014
+                    span.eduction__container_span-main
+                        | UNIVERSITY NAME
+                    span.eduction__container_span-footer-block-three
+                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        | Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        | ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                    span.eduction__container_span-header
+                        strong.eduction__container_span-strong MASTER DEGREE
+                        |                             ⁄⁄ Feb 2011-Jun 2014
+                    span.eduction__container_span-main
+                        | UNIVERSITY NAME
+                    span.eduction__container_span-footer-block-fourth
+                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        | Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        | ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                +experience('Опыт работы')
+                    span.experience__container_span-header
+                        strong.experience__container_span-header-strong COMPANY NAME
+                        |                             ⁄⁄ Feb 2011-Jun 2014
+                    span.experience__container_span-main
+                        | YOUR JOB HERE
+                    span.experience__container_span-footer-block-first
+                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        | Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        | ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                    span.experience__container_span-header
+                        strong.experience__container_span-header-strong COMPANY NAME
+                        |                             ⁄⁄ Feb 2011-Jun 2014
+                    span.experience__container_span-main
+                        | YOUR JOB HERE
+                    span.experience__container_span-footer-block-second
+                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        | Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        | ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                    span.experience__container_span-header
+                        strong.experience__container_span-header-strong COMPANY NAME
+                        |                             ⁄⁄ Feb 2011-Jun 2014
+                    span.experience__container_span-main
+                        | YOUR JOB HERE
+                    span.experience__container_span-footer-block-three
+                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        | Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        | ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                +software('Software')
+                    +containerSoft(['photoshop', 'dreamweaver', 'illustrator', 'After effects', 'indesign', 'htmls&css3'], [91, 83, 71, 62, 56, 91])
